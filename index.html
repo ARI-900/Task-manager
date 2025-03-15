@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <!-- link to add style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <main>
+      <h1>Task Manager</h1>
+
+      <!-- fPorm handler -->
+      <form id="formDatas" class="formContainer">
+        <input type="text" name="taskTitle" id="taskTitle" placeholder="Enter task title" required />
+        <textarea name="taskDesc" id="taskDesc" rows="6" cols="6" placeholder="Enter task description [optional]"></textarea>
+        <button id="addTaskBtn">Add Task</button>
+      </form>
+
+
+      <!-- Filter Buttons -->
+      <section class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </section>
+
+      <hr />
+
+      <!-- task List -->
+      <section class="task-list">
+        <ul id="tasks"></ul>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- link to add script app.js -->
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
